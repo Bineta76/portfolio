@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Frise chronologique des diplômes</title>
+<style>
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9f9f9;
+  padding: 20px;
+}
+.timeline {
+  position: relative;
+  max-width: 700px;
+  margin: auto;
+}
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  background-color: #0d6efd;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -2px;
+}
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+.container.left {
+  left: 0;
+}
+.container.right {
+  left: 50%;
+}
+.content {
+  background-color: white;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.container::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: -10px;
+  background-color: white;
+  border: 3px solid #0d6efd;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+.right::before {
+  left: -10px;
+}
+</style>
+</head>
+<body>
+
+<h2 style="text-align:center;">🎓 Frise chronologique des diplômes</h2>
+
+<div class="timeline">
+  <div class="container left">
+    <div class="content">
+      <h3>2006</h3>
+      <p>📘 Brevet Technicien Supérieures en Maintenances Automatismes Industriel</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h3>2004</h3>
+      <p>🎓 Baccalauréat professionnelle en Mécanique Automatismes Industriels</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h3>2002</h3>
+      <p>🎓 </p>Brevet Etude supérieur en Mécanique Automatisme industriel
+    </div>
+  </div>
+  
+
+</body>
+</html>
